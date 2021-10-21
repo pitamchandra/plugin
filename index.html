@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Intigation jquery plugin</title>
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="go-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="container">
+		    <a class="navbar-brand" href="index.html">Logo</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		      <ul class="navbar-nav mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Skills</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">About</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Service</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Contact</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+	<section class="banner-section">
+		<h1>Web Development Project</h1>
+	</section>
+	<section class="skills gap">
+		<div class="container">
+			<div class="row">
+				<h2 class="myh2">Skills</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="skills-item">
+						<span>HTML5</span>
+						<div id="bar1" class="barfiller">
+							<div class="tipWrap">
+							<span class="tip"></span>
+							</div>
+							<span class="fill" data-percentage="90"></span>
+						</div>
+						<span>CSS3</span>
+						<div id="bar2" class="barfiller">
+							<div class="tipWrap">
+							<span class="tip"></span>
+							</div>
+							<span class="fill" data-percentage="80"></span>
+						</div>
+						<span>JAVASCRIPT</span>
+						<div id="bar3" class="barfiller">
+							<div class="tipWrap">
+							<span class="tip"></span>
+							</div>
+							<span class="fill" data-percentage="70"></span>
+						</div>
+						<span>JQUREY</span>
+						<div id="bar4" class="barfiller">
+							<div class="tipWrap">
+							<span class="tip"></span>
+							</div>
+							<span class="fill" data-percentage="75"></span>
+						</div>
+						<span>RESPONSIVE</span>
+						<div id="bar5" class="barfiller">
+							<div class="tipWrap">
+							<span class="tip"></span>
+							</div>
+							<span class="fill" data-percentage="90"></span>
+						</div>
+						<span>PHP</span>
+						<div id="bar6" class="barfiller">
+							<div class="tipWrap">
+							<span class="tip"></span>
+							</div>
+							<span class="fill" data-percentage="65"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="counter-section gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="counter-inner">
+						<i class="far fa-heart"></i>
+						<span class="counter">220</span>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="counter-inner">
+						<i class="fab fa-instagram-square"></i>
+						<span class="counter">230</span>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="counter-inner">
+						<i class="fas fa-address-book"></i>
+						<span class="counter">120</span>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="counter-inner">
+						<i class="fab fa-gripfire"></i>
+						<span class="counter">420</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio gap">
+		<div class="container">
+			<div class="row">
+				<h2 class="myh2">Portfolio</h2>
+			</div>
+			<div class="row">
+				<div class="portfolio-btn">
+					<button type="button" data-filter="all">All</button>
+					<button type="button" data-filter=".web">web</button>
+					<button type="button" data-filter=".graphics">graphics</button>
+					<button type="button" data-filter=".wordpress">wordpress</button>
+
+				</div>
+			</div>
+				<div class=" row portfolio-mix">
+				    <div class="col-md-3 mix all" data-order="1">
+				    	<img class="port-img" src="img/counter-bg.jpg" alt="">
+				    	<p>poster</p>
+				    </div>
+				    <div class="col-md-3 mix web wordpress" data-order="2">
+				    	<img class="port-img" src="img/counter-bg.jpg" alt="">
+				    	<p>web,wordpress</p>
+				    </div>
+				    <div class="col-md-3 mix graphics" data-order="3">
+				    	<img class="port-img" src="img/counter-bg.jpg" alt="">
+				    	<p>graphics</p>
+				    </div>
+				    <div class="col-md-3 mix web wordpress" data-order="4">
+				    	<img class="port-img" src="img/counter-bg.jpg" alt="">
+				    	<p>wordpress,web</p>
+				    </div>
+				</div>
+		</div>
+	</section>
+
+
+	<!-- scroll to top -->
+	<a href="#go-top" class="btn btn-info scrolltop"><i class="fa fa-arrow-up"></i></a>
+
+
+
+	<!-- js link start -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.barfiller.js"></script>
+	<script src="js/jquery.waypoints.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script>
+		//counter up
+		$(".counter").counterUp({
+	    delay: 10,
+	    time: 2000
+		});
+	</script>
+	<script>
+		var mixer = mixitup('.portfolio-mix');
+	</script>
+
+	<script>
+		//progress bar
+	$('#bar1').barfiller({
+		duration: '3000',
+	});
+	$('#bar2').barfiller({
+		duration: '3500',
+	});
+	$('#bar3').barfiller({
+		duration: '3500',
+	});
+	$('#bar4').barfiller({
+		duration: '3500',
+	});
+	$('#bar5').barfiller({
+		duration: '3000',
+	});
+	$('#bar6').barfiller({
+		duration: '4000',
+	});
+	</script>
+	<script type="text/javascript">
+              
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('.navbar').stickUp();
+                });
+              });
+
+    </script>
+
+
+	<!-- for fade out scrollup btn -->
+	<script>
+		$(window).scroll(function(){
+			if($(window).scrollTop() > 200){
+				$('.scrolltop').fadeIn();
+			}
+			else{
+				$('.scrolltop').fadeOut();
+			}
+		});
+	</script>
+
+	
+</body>
+</html>
