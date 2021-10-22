@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body{
+	user-select: none;
+}
 /*global css start*/
 .gap{
 	padding: 70px 0;
@@ -171,16 +174,69 @@
 
 
 
-
-
-
-
-
-
-
 /*scroll to top*/
 .scrolltop{
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
 }
+
+
+/*responsive code start*/
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .navbar-light .navbar-nav .nav-link{
+  	text-align: center;
+  	margin-left: 0;
+  }
+  .banner-section h1{
+  	font-size: 35px;
+  }
+  .counter-inner {
+    margin-bottom: 10px;
+  }
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .navbar-light .navbar-nav .nav-link{
+  	text-align: center;
+  	margin-left: 0;
+  }
+  .counter-inner {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads 
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .navbar-light .navbar-nav .nav-link{
+  	text-align: center;
+  	margin-left: 0;
+  }
+  
+}
+
+
+
+
+

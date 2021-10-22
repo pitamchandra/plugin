@@ -6,6 +6,7 @@
 	<title>Intigation jquery plugin</title>
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -99,25 +100,25 @@
 	<section class="counter-section gap">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 wow slideInLeft"  data-wow-duration="1.5s">
 					<div class="counter-inner">
 						<i class="far fa-heart"></i>
 						<span class="counter">220</span>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInDown"  data-wow-duration="1.5s">
 					<div class="counter-inner">
 						<i class="fab fa-instagram-square"></i>
 						<span class="counter">230</span>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow bounceInUp"  data-wow-duration="1.5s">
 					<div class="counter-inner">
 						<i class="fas fa-address-book"></i>
 						<span class="counter">120</span>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow slideInRight"  data-wow-duration="1.5s">
 					<div class="counter-inner">
 						<i class="fab fa-gripfire"></i>
 						<span class="counter">420</span>
@@ -141,8 +142,8 @@
 
 				</div>
 			</div>
-				<div class=" row portfolio-mix">
-				    <div class="col-md-3 mix all" data-order="1">
+				<div class=" row portfolio-mix wow bounceInDown"  data-wow-duration="1.5s">
+				    <div class="col-md-3 mix all"  data-order="1">
 				    	<img class="port-img" src="img/counter-bg.jpg" alt="">
 				    	<p>poster</p>
 				    </div>
@@ -174,9 +175,12 @@
 	<script src="js/jquery.waypoints.js"></script>
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/stickUp.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
+  
 
 	<script>
 		//counter up
@@ -188,6 +192,9 @@
 	<script>
 		var mixer = mixitup('.portfolio-mix');
 	</script>
+	<script>
+  	new WOW().init();
+  </script>
 
 	<script>
 		//progress bar
